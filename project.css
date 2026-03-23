@@ -224,7 +224,7 @@ cite {
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
-  background-color: var(--altBackgroundColor);
+  background-color: var(--accent-3);
 }
 .place-order-info h2 {
   font-weight: bold;
@@ -235,3 +235,16 @@ cite {
 /* * * * * */
 /* Footer  */
 /* * * * * */
+.site-footer {
+  background-color: var(--altBackgroundColor);
+}
+.site-footer-center {
+  width: var(--view-width);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+}
+.site-footer span {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
