@@ -416,44 +416,6 @@ ul {
   /* margin-bottom: 1.38rem; */
 }
 
-/* "Lobotomy Owl" or "Stack" Pattern */
-/* In CSS, we call this the "Lobotomy Owl" or the Stack Pattern. Instead of giving every element a margin-bottom (which causes issues at the bottom of containers), you only add margin to an element if there is another element above it. */
-/* Any element that follows another element gets a top margin */
-body > * + *,
-section > * + *
-/* , .form > * + * */ {
-  margin-top: 1.5rem;
-}
-/* Specific tight spacing for headings followed by text */
-h1 + p,
-h2 + p,
-h3 + p {
-  margin-top: 0.75rem;
-}
-
-/* Accessibility (Focus States) - Might be an 'old browser' thing */
-/* I removed the default border on .btn, .form-input, and .form-textarea but haven't explicitly defined a :focus or :focus-visible state. */
-/* Why it matters: Keyboard users won't know where they are on the page. */
-/* Focus is usually controlled by the outline property, not border. However, by making borders transparent or subtle, you rely entirely on the browser's default "glow." If you ever set outline: none or outline: 0, you "break" the site for keyboard users. */
-/* :focus: Shows up whenever an element is clicked or tabbed to. (Can look "ugly" to mouse users). */
-/* :focus-visible: The "smart" version. It only shows the ring if the user is using a keyboard (Tab key). This keeps the design clean for mouse users but accessible for others. */
-/* The Fix: Use both to ensure older browsers still see something. */
-/* Apply to all interactive elements */
-/*  */
-/* .btn:focus-visible,
-.form-input:focus-visible,
-.form-textarea:focus-visible {
-  outline: 3px solid var(--accent-3);
-  outline-offset: 2px;
-} */
-/* Fallback for older browsers that don't support focus-visible */
-/* .btn:focus:not(:focus-visible),
-.form-input:focus:not(:focus-visible),
-.form-textarea:focus:not(:focus-visible) {
-  outline: none; (Prevents double-outlining on modern browsers)
-} */
-/*  */
-
 /* Page - to center header-'body'-footer */
 .page {
   width: var(--view-width);

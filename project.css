@@ -60,9 +60,9 @@ PROJECT CSS
 /* * * * */
 /* Main  */
 /* * * * */
-.main-content {
+/* .main-content {
   padding: 2.5rem 0;
-}
+} */
 
 /* * * * * * */
 /* Sections  */
@@ -77,6 +77,13 @@ PROJECT CSS
 /* * * * * * * * */
 /* Hero-Section  */
 /* * * * * * * * */
+.hero-section {
+  height: calc(96vh - 11rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--altBackgroundColor);
+}
 .hero-container {
   display: flex;
   flex-wrap: wrap;
@@ -88,6 +95,7 @@ PROJECT CSS
   flex: 1 1 35rem;
 }
 .hero-info h1 {
+  font-weight: bold;
   letter-spacing: -0.02em;
 }
 .hero-info p {
