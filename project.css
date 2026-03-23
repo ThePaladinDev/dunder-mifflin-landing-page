@@ -60,14 +60,43 @@ PROJECT CSS
 /* * * * */
 /* Main  */
 /* * * * */
+.main-content {
+  padding: 2.5rem 0;
+}
 
 /* * * * * * */
 /* Sections  */
 /* * * * * * */
+.section-center {
+  width: var(--view-width);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+}
 
 /* * * * * * * * */
 /* Hero-Section  */
 /* * * * * * * * */
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.hero-info {
+  flex: 1 1 35rem;
+}
+.hero-info p {
+  font-size: 1.25rem;
+}
+.hero-info button {
+  margin-top: 1rem;
+}
+.hero-img {
+  flex: 0 1 25rem;
+  max-width: 100%;
+}
 
 /* * * * * * * * */
 /* Staff-Section */
