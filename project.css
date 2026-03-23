@@ -116,13 +116,105 @@ PROJECT CSS
   background-color: var(--static-white);
 }
 
-/* * * * * * * * */
-/* Staff-Section */
-/* * * * * * * * */
+/* * * * * * * * * * * * * * * * */
+/* Staff-Section + Quote-Section */
+/* * * * * * * * * * * * * * * * */
 
-/* * * * * * * * */
-/* Quote-Section */
-/* * * * * * * * */
+/* staff-section + quote-section */
+.quote-section {
+  background-color: var(--backgroundColorDarker);
+}
+.quote-section .section-center {
+  padding: 5rem 2rem;
+}
+.quote-container {
+  max-width: var(--fixed-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.quote-container .quote-img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 4px solid var(--static-black);
+  margin: 3rem 0 2rem;
+}
+blockquote {
+  position: relative;
+  padding: 1.25rem 2.5rem;
+}
+/* The Big Quote Mark */
+blockquote::before {
+  content: '“';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  font-size: 5rem;
+  color: var(--accent-5);
+  font-family: serif;
+  line-height: 1;
+}
+blockquote p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-style: italic;
+  color: #333;
+}
+figcaption {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing);
+  font-size: 0.9rem;
+}
+cite {
+  font-style: normal;
+  font-weight: normal;
+  display: block;
+  margin-top: 0.25rem;
+  color: #888;
+}
+
+/* staff-section */
+.staff-section {
+  height: calc(75vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.staff-section .section-center {
+  padding: 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.staff {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.employee {
+  flex: 1 1 16rem;
+}
+.staff-section .quote-img {
+  width: 10rem;
+  height: 10rem;
+  border: 2px solid var(--static-black);
+  margin: 1.5rem 0;
+}
+/* The Big Quote Mark */
+.staff blockquote::before {
+  font-size: 4rem;
+}
+.staff blockquote p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
 
 /* * * * * * * * */
 /*  Place-Order  */
