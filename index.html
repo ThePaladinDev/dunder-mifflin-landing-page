@@ -12,143 +12,165 @@
     <title>Dunder Mifflin | Home</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <div class="nav-bar">
-      <div class="nav-center">
-        <a href="">
-          <div class="logo"><span>Dunder Mifflin</span></div>
-        </a>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="site-header-center">
+        <a href="/" class="logo">Dunder Mifflin</a>
+        <nav class="site-navbar">
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
-    <!-- Hero -->
-    <div class="hero">
-      <div class="hero-info">
-        <h1>Limitless paper in a paperless world</h1>
-        <p>
-          Some say the office of the future is paperless. To them I say: Good
-          luck trying to fax a sandwich.
-          <br />
-          Buy your paper from people who care.
-          <br />
-          People who are also your friends.
-          <br />
-          <em>And sometimes your family.</em>
-        </p>
-        <button type="button" class="btn">Place Order</button>
-      </div>
-      <div>
-        <img
-          src="./images/hero-image.png"
-          alt="Painting of a village with a bridge over a lake"
-          width="500"
-          height="500"
-        />
-      </div>
-    </div>
-    <!-- Employee Info -->
-    <div class="our-employees">
-      <h2>Our Employees At Your Service</h2>
-      <div class="employee-list">
-        <!-- Dwight -->
-        <div class="employee">
-          <figure>
+    </header>
+    <!-- Main -->
+    <main id="main-content">
+      <!-- Sections -->
+      <!-- Hero -->
+      <section class="hero-section">
+        <div class="section-center">
+          <div class="hero-info">
+            <h1>Limitless paper in a paperless world</h1>
+            <p>
+              Some say the office of the future is paperless. To them I say:
+              Good luck trying to fax a sandwich.
+              <br />
+              Buy your paper from people who care.
+              <br />
+              People who are also your friends.
+              <br />
+              <em>And sometimes your family.</em>
+            </p>
+            <button type="button" class="btn">Place Order</button>
+          </div>
+          <div>
             <img
-              src="./images/employees/dwight-schrute-1.png"
-              alt="Dwight Schrute, Assistant to the Regional Manager"
+              src="./images/hero-image.png"
+              alt="Painting of a village with a bridge over a lake"
+              width="500"
+              height="500"
             />
+          </div>
+        </div>
+      </section>
+      <!-- Staff -->
+      <section class="staff-section">
+        <div class="section-center">
+          <h2>Our Employees At Your Service</h2>
+          <div class="staff">
+            <!-- Dwight -->
+            <div class="employee">
+              <figure>
+                <img
+                  src="./images/employees/dwight-schrute-1.png"
+                  alt="Dwight Schrute, Assistant to the Regional Manager"
+                />
+                <figcaption>
+                  Dwight Schrute, Assistant
+                  <em>to</em>
+                  the Regional Manager
+                </figcaption>
+              </figure>
+              <p>
+                'I never take vacations, I never get sick. And I don't celebrate
+                any major holidays.'
+              </p>
+            </div>
+            <!-- Jim -->
+            <div class="employee">
+              <figure>
+                <img
+                  src="./images/employees/jim-halpert-1.png"
+                  alt="Jim Halpert, Sales Associate"
+                />
+                <figcaption>Jim Halpert, Sales Associate</figcaption>
+              </figure>
+              <p>
+                'I spend most of my day at the reception desk, but when I’m at
+                my own desk, I’m actually quite good at selling paper.'
+              </p>
+            </div>
+            <!-- Stanley -->
+            <div class="employee">
+              <figure>
+                <img
+                  src="./images/employees/stanley-hudson-1.png"
+                  alt="Stanley Hudson, Sales Associate"
+                />
+                <figcaption>Stanley Hudson, Sales Associate</figcaption>
+              </figure>
+              <p>
+                'I like crossword puzzles, the 5:00 PM bell, and being left
+                alone. If you want paper, make it quick.'
+              </p>
+            </div>
+            <!-- Pam -->
+            <div class="employee">
+              <figure>
+                <img
+                  src="./images/employees/pam-beesly-1.png"
+                  alt="Pam Beesly, Receptionist"
+                />
+                <figcaption>Pam Beesly, Receptionist</figcaption>
+              </figure>
+              <p>
+                <i>Dunder Mifflin, this is Pam.</i>
+                <br />
+                'I don’t sell the paper, but I’m the one who makes sure you
+                actually get to talk to someone who does.'
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Quote -->
+      <section class="quote-section">
+        <div class="section-center">
+          <div class="title">
+            <h2>Message from our Regional Manager</h2>
+            <div class="title-underline"></div>
+          </div>
+          <figure class="quote-container">
+            <div class="img-container quote-img">
+              <img
+                src="./images/employees/michael-scott-1.png"
+                alt="Michael Scott smiling in the Scranton office"
+                class="img"
+              />
+            </div>
+            <blockquote>
+              <p>
+                "Some say the office of the future is paperless. To them I say:
+                Good luck trying to fax a sandwich.
+                <br />
+                Buy your paper from people who care.
+                <br />
+                People who are also your friends.
+                <br />
+                <em>And sometimes your family.</em>
+              </p>
+            </blockquote>
             <figcaption>
-              Dwight Schrute, Assistant
-              <em>to</em>
-              the Regional Manager
+              — Michael Scott,
+              <cite>Regional Manager, Scranton</cite>
             </figcaption>
           </figure>
-          <p>
-            'I never take vacations, I never get sick. And I don't celebrate any
-            major holidays.'
-          </p>
         </div>
-        <!-- Jim -->
-        <div class="employee">
-          <figure>
-            <img
-              src="./images/employees/jim-halpert-1.png"
-              alt="Jim Halpert, Sales Associate"
-            />
-            <figcaption>Jim Halpert, Sales Associate</figcaption>
-          </figure>
-          <p>
-            'I spend most of my day at the reception desk, but when I’m at my
-            own desk, I’m actually quite good at selling paper.'
-          </p>
+      </section>
+      <!-- Call to action: Place Order -->
+      <section class="place-order-section">
+        <div class="section-center">
+          <h2>Order Paper Now!</h2>
+          <p>Place an order by clicking that button over there.</p>
+          <button type="button" class="btn">I Want Paper</button>
         </div>
-        <!-- Stanley -->
-        <div class="employee">
-          <figure>
-            <img
-              src="./images/employees/stanley-hudson-1.png"
-              alt="Stanley Hudson, Sales Associate"
-            />
-            <figcaption>Stanley Hudson, Sales Associate</figcaption>
-          </figure>
-          <p>
-            'I like crossword puzzles, the 5:00 PM bell, and being left alone.
-            If you want paper, make it quick.'
-          </p>
-        </div>
-        <!-- Pam -->
-        <div class="employee">
-          <figure>
-            <img
-              src="./images/employees/pam-beesly-1.png"
-              alt="Pam Beesly, Receptionist"
-            />
-            <figcaption>Pam Beesly, Receptionist</figcaption>
-          </figure>
-          <p>
-            <i>Dunder Mifflin, this is Pam.</i>
-            <br />
-            'I don’t sell the paper, but I’m the one who makes sure you actually
-            get to talk to someone who does.'
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- Quote -->
-    <div class="quote">
-      <figure>
-        <img
-          src="./images/employees/michael-scott-1.png"
-          alt="Michael Scott, Regional Manager, Scranton"
-        />
-        <figcaption>Michael Scott, Regional Manager, Scranton</figcaption>
-      </figure>
-      <h2>
-        "Some say the office of the future is paperless. To them I say: Good
-        luck trying to fax a sandwich.
-        <br />
-        Buy your paper from people who care.
-        <br />
-        People who are also your friends.
-        <br />
-        <em>And sometimes your family.</em>
-        <br />
-        — Michael Scott
-      </h2>
-    </div>
-    <!-- Call to action: Place Order -->
-    <div class="place-order">
-      <h2>Order Paper Now!</h2>
-      <p>Place an order by clicking that button over there.</p>
-      <button type="button">I Want Paper</button>
-    </div>
+      </section>
+    </main>
     <!-- Footer -->
-    <div class="footer">
+    <footer class="site-footer">
       <span>Copyright &copy; Totally Not Dunder Mifflin</span>
-    </div>
+    </footer>
   </body>
 </html>

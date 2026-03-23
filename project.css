@@ -1,0 +1,86 @@
+/* 
+============= 
+PROJECT CSS
+=============
+*/
+
+/* * * * * */
+/* Header  */
+/* * * * * */
+
+/* header */
+.site-header {
+  background-color: var(--altBackgroundColor);
+}
+.site-header-center {
+  width: var(--view-width);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* brand-logo */
+.logo {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+
+  background-color: var(--static-black);
+  color: var(--static-white);
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: 2px;
+
+  text-align: center;
+  user-select: none;
+}
+
+/* navbar */
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.nav-links a {
+  /* font-weight: 500; */
+  color: var(--altTextColor);
+  font-size: clamp(0.75rem, 1.5vw, 1.5rem);
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: var(--accent-5);
+}
+
+/* * * * */
+/* Main  */
+/* * * * */
+
+/* * * * * * */
+/* Sections  */
+/* * * * * * */
+
+/* * * * * * * * */
+/* Hero-Section  */
+/* * * * * * * * */
+
+/* * * * * * * * */
+/* Staff-Section */
+/* * * * * * * * */
+
+/* * * * * * * * */
+/* Quote-Section */
+/* * * * * * * * */
+
+/* * * * * * * * */
+/*  Place-Order  */
+/* * * * * * * * */
+
+/* * * * * */
+/* Footer  */
+/* * * * * */

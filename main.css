@@ -41,22 +41,46 @@ html {
   --accent-7: #5d5577;
   --accent-8: #3e3950;
   --accent-9: #1f1c28;
+  /* text */
+  --text-color-0: #f8fafc;
+  --text-color-1: #f1f5f9;
+  --text-color-2: #e2e8f0;
+  --text-color-3: #cbd5e1;
+  --text-color-4: #94a3b8;
+  --text-color-5: #64748b;
+  --text-color-6: #475569;
+  --text-color-7: #334155;
+  --text-color-8: #1e293b;
+  --text-color-9: #0f172a;
   /* primary */
-  --primary-0: #f8fafc;
-  --primary-1: #f1f5f9;
-  --primary-2: #e2e8f0;
-  --primary-3: #cbd5e1;
-  --primary-4: #94a3b8;
-  --primary-5: #64748b;
-  --primary-6: #475569;
-  --primary-7: #334155;
-  --primary-8: #1e293b;
-  --primary-9: #0f172a;
+  --primary-0: #f2eae0;
+  --primary-1: #dad3ca;
+  --primary-2: #c2bbb3;
+  --primary-3: #a9a49d;
+  --primary-4: #918c86;
+  --primary-5: #797570;
+  --primary-6: #615e5a;
+  --primary-7: #494643;
+  --primary-8: #302f2d;
+  --primary-9: #181716;
   /* secondary */
-  --secondary-5: #b4d3d9;
-  /*  */
-  --bg-primary: #f2eae0;
-  --bg-secondary: #b4d3d9;
+  --secondary-0: #b4d3d9;
+  --secondary-1: #a2bec3;
+  --secondary-2: #90a9ae;
+  --secondary-3: #7e9498;
+  --secondary-4: #6c7f82;
+  --secondary-5: #5a6a6d;
+  --secondary-6: #485457;
+  --secondary-7: #363f41;
+  --secondary-8: #242a2b;
+  --secondary-9: #121516;
+  /* bg */
+  --bg-primary: var(--primary-0);
+  --bg-primary-darker: var(--primary-2);
+  --bg-secondary: var(--secondary-0);
+  --bg-secondary-darker: var(--secondary-2);
+  --fg-primary: var(--text-color-9);
+  --fg-secondary: var(--text-color-7);
   /* rest of the colors */
   --color-black: #222;
   --color-white: #fff;
@@ -66,9 +90,11 @@ html {
   --green-dark: #0f5132;
   /* var - Light Mode Defaults */
   --backgroundColor: var(--bg-primary);
-  --textColor: var(--primary-9);
+  --backgroundColorDarker: var(--bg-primary-darker);
+  --textColor: var(--fg-primary);
   --altBackgroundColor: var(--bg-secondary);
-  --altTextColor: var(--primary-7);
+  --altBackgroundColorDarker: var(--bg-secondary-darker);
+  --altTextColor: var(--fg-secondary);
   --static-black: var(--color-black);
   --static-white: var(--color-white); /* For buttons, icons that stay white */
   --layer-1: var(--color-white); /* For forms, cards, sidebars */
@@ -228,25 +254,25 @@ ul {
   width: 32vw;
   /* Consistent wxh for a grid of cards. Comment the below out otherwise. */
   /* height: 18rem; (if you do this, then you do manual calculation.) */
-  aspect-ratio: 16 / 9;
-  max-width: var(--max-width);
-  border: 5px solid var(--accent-5);
-  border-radius: var(--extraBorderRadius);
+  aspect-ratio: 1 / 1;
+  max-width: var(--fixed-width);
+  /* border: 5px solid var(--accent-5);
+  border-radius: var(--extraBorderRadius); */
   overflow: hidden; /* otherwise square corners poke out of rounded borders. */
   /* hover-lift effect */
   /* using 'all' causes lag. 'all' forces the browser to check every single property (color, width, height, position, opacity) 60 times per second during the animation. */
   /* transition: var(--transition); */
-  transition:
+  /* transition:
     transform 0.3s ease-in-out,
     border-color 0.3s ease-in-out,
-    box-shadow 0.3s ease-in-out;
+    box-shadow 0.3s ease-in-out; */
   box-shadow: var(--shadow-1);
 }
-.img-container:hover {
+/* .img-container:hover {
   transform: translateY(-0.25rem);
   border-color: var(--accent-6);
   box-shadow: var(--shadow-3);
-}
+} */
 /* use container to contain width and height */
 .img {
   width: 100%;
