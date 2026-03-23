@@ -3,28 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- normalize -->
     <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="./styles.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./main.css" />
     <title>Dunder Mifflin | Home</title>
   </head>
   <body>
     <!-- Navbar -->
     <div class="nav-bar">
-      <div class="logo">
-        <a href="#">
-          <img
-            src="./images/dunder-mifflin-logo.png"
-            alt="Dunder Mifflin Logo"
-            width="100"
-            height="59"
-          />
+      <div class="nav-center">
+        <a href="">
+          <div class="logo"><span>Dunder Mifflin</span></div>
         </a>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
       </div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">About us</a></li>
-      </ul>
     </div>
     <!-- Hero -->
     <div class="hero">
@@ -40,7 +37,7 @@
           <br />
           <em>And sometimes your family.</em>
         </p>
-        <button type="button">Place Order</button>
+        <button type="button" class="btn">Place Order</button>
       </div>
       <div>
         <img
@@ -52,69 +49,71 @@
       </div>
     </div>
     <!-- Employee Info -->
-    <div class="employee-info">
+    <div class="our-employees">
       <h2>Our Employees At Your Service</h2>
-      <!-- Dwight -->
-      <div class="employee">
-        <figure>
-          <img
-            src="./images/employees/dwight-schrute-1.png"
-            alt="Dwight Schrute, Assistant to the Regional Manager"
-          />
-          <figcaption>
-            Dwight Schrute, Assistant
-            <em>to</em>
-            the Regional Manager
-          </figcaption>
-        </figure>
-        <p>
-          'I never take vacations, I never get sick. And I don't celebrate any
-          major holidays.'
-        </p>
-      </div>
-      <!-- Jim -->
-      <div class="employee">
-        <figure>
-          <img
-            src="./images/employees/jim-halpert-1.png"
-            alt="Jim Halpert, Sales Associate"
-          />
-          <figcaption>Jim Halpert, Sales Associate</figcaption>
-        </figure>
-        <p>
-          'I spend most of my day at the reception desk, but when I’m at my own
-          desk, I’m actually quite good at selling paper.'
-        </p>
-      </div>
-      <!-- Stanley -->
-      <div class="employee">
-        <figure>
-          <img
-            src="./images/employees/stanley-hudson-1.png"
-            alt="Stanley Hudson, Sales Associate"
-          />
-          <figcaption>Stanley Hudson, Sales Associate</figcaption>
-        </figure>
-        <p>
-          'I like crossword puzzles, the 5:00 PM bell, and being left alone. If
-          you want paper, make it quick.'
-        </p>
-      </div>
-      <!-- Pam -->
-      <div class="employee">
-        <figure>
-          <img
-            src="./images/employees/pam-beesly-1.png"
-            alt="Pam Beesly, Receptionist"
-          />
-          <figcaption>Pam Beesly, Receptionist</figcaption>
-        </figure>
-        <p>
-          <i>Dunder Mifflin, this is Pam.</i>
-          <br />
-          'I don’t sell the paper, but I’m the one who makes sure you actually
-          get to talk to someone who does.'
-        </p>
+      <div class="employee-list">
+        <!-- Dwight -->
+        <div class="employee">
+          <figure>
+            <img
+              src="./images/employees/dwight-schrute-1.png"
+              alt="Dwight Schrute, Assistant to the Regional Manager"
+            />
+            <figcaption>
+              Dwight Schrute, Assistant
+              <em>to</em>
+              the Regional Manager
+            </figcaption>
+          </figure>
+          <p>
+            'I never take vacations, I never get sick. And I don't celebrate any
+            major holidays.'
+          </p>
+        </div>
+        <!-- Jim -->
+        <div class="employee">
+          <figure>
+            <img
+              src="./images/employees/jim-halpert-1.png"
+              alt="Jim Halpert, Sales Associate"
+            />
+            <figcaption>Jim Halpert, Sales Associate</figcaption>
+          </figure>
+          <p>
+            'I spend most of my day at the reception desk, but when I’m at my
+            own desk, I’m actually quite good at selling paper.'
+          </p>
+        </div>
+        <!-- Stanley -->
+        <div class="employee">
+          <figure>
+            <img
+              src="./images/employees/stanley-hudson-1.png"
+              alt="Stanley Hudson, Sales Associate"
+            />
+            <figcaption>Stanley Hudson, Sales Associate</figcaption>
+          </figure>
+          <p>
+            'I like crossword puzzles, the 5:00 PM bell, and being left alone.
+            If you want paper, make it quick.'
+          </p>
+        </div>
+        <!-- Pam -->
+        <div class="employee">
+          <figure>
+            <img
+              src="./images/employees/pam-beesly-1.png"
+              alt="Pam Beesly, Receptionist"
+            />
+            <figcaption>Pam Beesly, Receptionist</figcaption>
+          </figure>
+          <p>
+            <i>Dunder Mifflin, this is Pam.</i>
+            <br />
+            'I don’t sell the paper, but I’m the one who makes sure you actually
+            get to talk to someone who does.'
+          </p>
+        </div>
       </div>
     </div>
     <!-- Quote -->
