@@ -11,7 +11,7 @@ I really really loved it and when I was about to make a Landing Page Project it 
 
 ## 🚀 Live Demo
 
-Link to live demo. (Coming soon)
+[Link to live demo.](https://thepaladindev.github.io/dunder-mifflin-landing-page/)
 
 ## 📸 Preview
 
